@@ -8,8 +8,7 @@ import {
 	Image,
 	useDisclosure,
 } from '@nextui-org/react'
-import Link from 'next/link'
-import { useParams } from 'next/navigation'
+import Link, { useParams } from 'react-router'
 import { useEffect, useMemo, useState } from 'react'
 
 const Products = () => {
@@ -62,7 +61,7 @@ const Products = () => {
 			</TextMotion>
 			<div className='grid sm:max-h-[400px] lg:grid-cols-4 sm:grid-cols-2 gap-3'>
 				{products?.slice(-4)?.map(el => (
-					<Link key={el.id} href={`/${locale}/categories?name=${el.id}`}>
+					<Link key={el.id} to={`/${locale}/categories?name=${el.id}`}>
 						<Card>
 							<CardBody className='overflow-visible py-2'>
 								<Image

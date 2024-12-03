@@ -1,8 +1,7 @@
 import { API_BASE_URL_PHOTO } from '@/api/config'
 import { Button, Image } from '@nextui-org/react'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { useParams } from 'next/navigation'
+import { Link, useParams } from 'react-router'
 
 const Card = ({
 	place,
@@ -14,7 +13,7 @@ const Card = ({
 	isName = false,
 	name,
 	id,
-	index
+	index,
 }) => {
 	const { locale } = useParams() || {}
 	return (
@@ -46,7 +45,7 @@ const Card = ({
 				</div>
 				<Link
 					className={`${isButton ? 'block' : 'hidden'}`}
-					href={`/${locale}/technique`}
+					to={`/${locale}/technique`}
 				>
 					<Button className='w-full'>Open</Button>
 				</Link>

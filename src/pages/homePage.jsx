@@ -10,6 +10,7 @@ import Technique from '@/module/technique'
 const HomePage = () => {
 	return (
 		<>
+		111	
 			<Hero />
 			<About/>
 			<Products />

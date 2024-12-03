@@ -5,10 +5,10 @@ import image2 from '@/public/material.png'
 import image4 from '@/public/threads.png'
 import CardMotion from '@/ui/cardMotion'
 import TextMotion from '@/ui/textMotion'
+import { Image } from '@nextui-org/react'
 
-import Image from 'next/image'
-import { useParams } from 'next/navigation'
 import { useMemo } from 'react'
+import { useParams } from 'react-router'
 const Statistic = () => {
 	const { locale } = useParams() || {}
 	const section = useMemo(

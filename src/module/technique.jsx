@@ -2,8 +2,8 @@
 import { API_BASE_URL } from '@/api/config'
 import Card from '@/ui/card'
 import TextMotion from '@/ui/textMotion'
-import { useParams } from 'next/navigation'
 import { useEffect, useMemo, useState } from 'react'
+import { useParams } from 'react-router'
 
 const Technique = () => {
 	const [place, setPlace] = useState(false)

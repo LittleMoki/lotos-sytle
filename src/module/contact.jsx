@@ -3,7 +3,7 @@
 import TextMotion from '@/ui/textMotion'
 import { Button, Input, Textarea } from '@nextui-org/react'
 import { useFormik } from 'formik'
-import { useParams } from 'next/navigation'
+import { useParams } from 'react-router'
 import { useMemo, useState } from 'react'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'

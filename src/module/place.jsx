@@ -2,7 +2,7 @@
 import { API_BASE_URL } from '@/api/config'
 import Card from '@/ui/card'
 import TextMotion from '@/ui/textMotion'
-import { useParams } from 'next/navigation'
+import { useParams } from 'react-router'
 import { useEffect, useMemo, useState } from 'react'
 
 const Place = () => {

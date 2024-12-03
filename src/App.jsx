@@ -10,11 +10,7 @@ function App() {
 
 	return (
 		<div>
-			<button onClick={() => changeLanguage('en')}>English</button>
-			<button onClick={() => changeLanguage('ru')}>Deutsch</button>
-			<h1>{t('title')}</h1>
-			<p>{t('description.part1')}</p>
-			<p>{t('description.part2')}</p>
+			Hello World
 		</div>
 	)
 }

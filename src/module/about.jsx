@@ -2,7 +2,7 @@
 
 import TextMotion from '@/ui/textMotion'
 import { motion } from 'framer-motion'
-import { useParams } from 'next/navigation'
+import { useParams } from 'react-router'
 import { useMemo } from 'react'
 
 const About = () => {
