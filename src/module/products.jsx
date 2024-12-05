@@ -8,8 +8,8 @@ import {
 	Image,
 	useDisclosure,
 } from '@nextui-org/react'
-import Link, { useParams } from 'react-router'
 import { useEffect, useMemo, useState } from 'react'
+import { Link, useParams } from 'react-router'
 
 const Products = () => {
 	const { locale } = useParams() || {}
